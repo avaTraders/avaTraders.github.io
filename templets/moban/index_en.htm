@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>{dede:global.cfg_webname_en/}</title> 
+  <meta name="keywords" content="{dede:global.cfg_keywords/}" /> 
+  <meta name="description" content="{dede:global.cfg_description/}" /> 
+  <link rel="stylesheet" href="/templets/moban/imgcssjs/style.css" /> 
+  <link rel="stylesheet" href="/templets/moban/imgcssjs/swiper.min.css" /> 
+  <link rel="stylesheet" href="/templets/moban/imgcssjs/animate.min.css" /> 
+  <link rel="stylesheet" href="/templets/moban/imgcssjs/font-awesome.min.css" /> 
+ </head> 
+ <body> 
+  <div class="swiper-container swiper-container-vertical"> 
+  {dede:include filename="head_en.htm" /}
+   <!--公告-->
+   {dede:channelArtlist typeid='72,0'}
+<div class="notice"> 
+    <h4> <a href="{dede:field.typedir/}">{dede:field.typename/}</a> 
+     <div class="not-r"> 
+      <span></span> 
+      <span></span> 
+     </div> </h4> 
+    <div class="conte"> 
+     {dede:arclist typeid='' att=''  limit='0,2'  titlelen='120' infolen=''  orderby='pubdate' }
+<time>[field:stime/]</time>
+     <h5> <a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title function="cn_substr(@me,140)"/]</a></h5>
+{/dede:arclist}
+     <p><br /> </p> 
+    </div> 
+   </div>
+{/dede:channelArtlist}
+   
+    
+   <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"> 
+    <div class="swiper-slide banner swiper-slide-active" style="height: 907px;"> 
+     <div> 
+      <h3>Welcome To BCA Trader </h3> 
+      <h4 class="ani                      fadeIn animated" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: visible;animation-duration:0.5s;-webkit-animation-duration:0.5s;animation-delay:0.3s;-webkit-animation-delay:0.3s;"> BCA Trader是由经验丰富的基金经理和操作活跃的交易者组成，BCA Trader了解市场和你的需要。 </h4> 
+      <a href="#" class="ani                      bounceInLeft animated" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: visible;animation-duration:0.5s;-webkit-animation-duration:0.5s;animation-delay:0.3s;-webkit-animation-delay:0.3s;"> <i class="fa fa-pencil-square-o"></i> Sign In </a> 
+      <a href="#" class="ani                      bounceInRight animated" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: visible;animation-duration:0.5s;-webkit-animation-duration:0.5s;animation-delay:0.3s;-webkit-animation-delay:0.3s;"> <i class="fa fa-magic"></i> Register </a> 
+     </div> 
+    </div> 
+    <div class="swiper-slide good swiper-slide-next" style="height: 907px;"> 
+     <div class="good-wrap"> 
+      <h3>Our Advantages</h3> 
+      <p class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: hidden;"> {dede:sql sql='Select * from dede_addon_suipian where aid=35'}[field:content/]{/dede:sql}</p> 
+      <div class="good-ft ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: hidden;"> 
+       <div class="ft-cont"> 
+        <dl> 
+         <dt></dt> 
+         <dd> 
+          <p>专业平台</p> 专业级安全保障
+          <br />最坚实稳定的外汇投资 
+         </dd> 
+        </dl> 
+        <dl> 
+         <dt></dt> 
+         <dd> 
+          <p>资金安全</p> 客户保证金隔离放置
+          <br />保证金专户管理，存取放心 
+         </dd> 
+        </dl> 
+        <dl> 
+         <dt></dt> 
+         <dd> 
+          <p>高效清算</p> 直通式处理清算商
+          <br />为交易者提供最佳交易环境 
+         </dd> 
+        </dl> 
+        <dl> 
+         <dt></dt> 
+         <dd> 
+          <p>监管保障</p> 英国FCA监管
+          <br />FCA监管号：442640 
+         </dd> 
+        </dl> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="swiper-slide mt4" style="height: 907px;"> 
+     <div> 
+      <h3>BCA Trader Trading System And Software</h3> 
+      <div class="mt4-left ani               " swiper-animate-effect="flipInY" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: hidden;"> 
+       <img src="/templets/moban/imgcssjs/platform.png" /> 
+      </div> 
+      <div class="mt4-right"> 
+       <span> 我们为您免费提供适用于PC、手机、平板以及基于网络开发的平台，并结合我们的顶级数据服务，为您打造舒适的交易生涯，现在请选择适合您的外汇交易平台，利用尖端科技进行交易。 </span> 
+       <dl class="ani               " swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: hidden;"> 
+        <dt> 
+         <i class="fa fa-desktop"></i> 
+        </dt> 
+        <dd>
+          MetaTrade For PC 
+        </dd> 
+        <dd>
+          在笔记本及电脑中交易 
+        </dd> 
+        <a href="#"> 点击下载 </a> 
+       </dl> 
+       <dl class="ani               " swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: hidden;"> 
+        <dt> 
+         <i class="fa fa-android"></i> 
+        </dt> 
+        <dd>
+          TraderViews For Android 
+        </dd> 
+        <dd>
+          在安卓系统的手机中交易 
+        </dd> 
+        <img src="/templets/moban/imgcssjs/code.png" style="width:150px; height:150px;" /> 
+        <a href="#"> 浏览器扫描 </a> 
+       </dl> 
+       <dl class="ani               " swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: hidden;"> 
+        <dt> 
+         <i class="fa fa-apple"></i> 
+        </dt> 
+        <dd>
+          TraderViews For iPhone 
+        </dd> 
+        <dd>
+          在iPhone系统的手机中交易 
+        </dd> 
+        <img src="/templets/moban/imgcssjs/code.png" style="width:150px; height:150px;" /> 
+        <a href="#"> 微信扫描 </a> 
+       </dl> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="swiper-slide news" style="height: 907px;"> 
+     <div> 
+      <h3>College</h3> 
+      
+	  {dede:channelArtlist typeid='59,60'}
+<div class="news-{dede:global name=itemindex runphp='yes'}$a="left"; $b="right";if (@me==1) @me=$a; else @me=$b;{/dede:global} ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: hidden;"> 
+       <h4 style=" width:220px; text-transform:capitalize"> {dede:field.typename/} </h4> 
+       <ul> 
+        <div id="autonews1"> 
+         {dede:arclist typeid='' att=''  limit='0,5'  titlelen='120' infolen=''  orderby='pubdate' }
+<li><a href="[field:arcurl/]" target=""><i class="fa fa-angle-double-right"></i><h5>[field:title function="cn_substr(@me,140)"/]</h5><time>[field:stime/]</time></a></li>
+{/dede:arclist}
+          
+        </div> 
+       </ul> 
+      </div>
+{/dede:channelArtlist}
+	  
+	   
+      
+	  
+	   
+     </div> 
+    </div> 
+    <div class="swiper-slide footer" style="height: 907px;"> 
+     <div class="box"> 
+      <div class="ft-top"> 
+       <div class="ft-left ani     " swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: hidden;"></div> 
+       <div class="ft-right ani     " swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: hidden;"> 
+      {dede:sql sql='Select * from dede_addon_suipian where aid=33'}[field:content/]{/dede:sql}
+       </div> 
+       <div class="clear"></div> 
+      </div> 
+      <div class="ft-adv ani     " swiper-animate-effect="bounceInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: hidden;"> 
+       <div class="wenzi_box"> 
+        <div class="wenzibox"> 
+         <h1>Market risk&nbsp;&nbsp;&nbsp;&nbsp; Investment Needs To Be Prudent</h1> 
+         <span style="text-align:left;"> 
+          {dede:sql sql='Select * from dede_addon_suipian where aid=31'}[field:content/]{/dede:sql} </span> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <script type="text/javascript" src="/templets/moban/imgcssjs/jquery.js"></script> 
+  <script type="text/javascript" src="/templets/moban/imgcssjs/style.js"></script> 
+  <script src="/templets/moban/imgcssjs/swiper.min.js"></script> 
+  <script type="text/javascript" src="/templets/moban/imgcssjs/swiper.animate1.0.2.min.js"></script> 
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+        mousewheelControl : true,
+        direction:'vertical',
+        mousewheelForceToAxis : true,
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        }
+    });
+</script> 
+  <script src="/templets/moban/imgcssjs/stop.js"></script>  
+ </body>
+</html>

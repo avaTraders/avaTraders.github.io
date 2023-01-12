@@ -1,0 +1,22 @@
+ <footer> 
+   <div class="ft-nav"> 
+    <div class="w1200"> 
+     
+	 {dede:channelArtlist typeid='41,47,52,56,58,62,66,74'}
+<dl>
+       {dede:field.typename/} 
+      
+	  {dede:channel type='son' typeid=''}
+<a href="[field:typelink /]">
+       <dd>
+        <i class="fa fa-angle-double-right"></i>[field:typename/]
+       </dd></a>
+{/dede:channel} 
+     </dl>
+{/dede:channelArtlist} 
+    </div> 
+   </div> 
+   <div class="w1200 copy">
+     {dede:sql sql='Select * from dede_addon_suipian where aid=37'}[field:content/]{/dede:sql}
+   </div> 
+  </footer> 

@@ -1,0 +1,40 @@
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>{dede:field.title/}_{dede:global.cfg_webname_en/}</title> 
+  <meta name="keywords" content="{dede:global.cfg_keywords/}" /> 
+  <meta name="description" content="{dede:global.cfg_description/}" /> 
+  <link rel="stylesheet" href="/templets/moban/imgcssjs/style.css" /> 
+  <link rel="stylesheet" href="/templets/moban/imgcssjs/font-awesome.min.css" /> 
+  <script type="text/javascript" src="/templets/moban/imgcssjs/plugins.min.js"></script> 
+  <script type="text/javascript" src="/templets/moban/imgcssjs/immi.custom.min.js"></script> 
+  <script src="/templets/moban/imgcssjs/jquery-ui.min.js"></script> 
+  <script src="/templets/moban/imgcssjs/jquery-1.9.1.min.js"></script> 
+ </head> 
+ <body bgcolor="#f3f3f3"> 
+ {dede:include filename="head_en.htm" /}
+  <div class="ab-conter-top-pic"></div> 
+  <div class="content"> 
+   <div class="cont-left"> 
+    <div class="ab-r-title">
+      {dede:field.typename/} 
+     <div class="ab-here"> 
+      <i class="fa fa-map-marker"></i> 
+	  <a href="/en" target="_self">Home</a>{dede:field name='position'/}
+     </div> 
+    </div> 
+    <div> 
+      
+     <div class="problem">{dede:field.content/}</div> 
+    </div> 
+   </div> 
+   <!--cont_right位置--> 
+   {dede:include filename="rightside_en.htm" /} 
+  </div> 
+{dede:include filename="footer_en.htm" /}
+  <script type="text/javascript" src="/templets/moban/imgcssjs/jquery.js"></script> 
+  <script type="text/javascript" src="/templets/moban/imgcssjs/style.js"></script> 
+  <script type="text/javascript" src="/templets/moban/imgcssjs/jquery-1.8.0.js"></script> 
+  <script type="text/javascript" src="/templets/moban/imgcssjs/move.js"></script>  
+ </body>
+</html>

@@ -1,0 +1,42 @@
+  <header> 
+   <div class="header-top"> 
+    <div class="cont"> 
+     <div class="left">
+       {dede:sql sql='Select * from dede_addon_suipian where aid=36'}[field:content/]{/dede:sql}
+     </div> 
+     <ul class="right"> 
+       
+      <li style="background: #333;"> <a href="/en" target="_blank"> <img src="/templets/moban/imgcssjs/gb.png" /> ENGLISH </a> 
+       <ul class="lang"> 
+        <li> <a href="/" target="_blank"> <img src="/templets/moban/imgcssjs/cn.png" /> 简体中文 </a> </li> 
+       </ul> </li> 
+     </ul> 
+    </div> 
+   </div> 
+   <nav> 
+    <a class="logo" href="/en" style="background: url({dede:sql sql='Select * from dede_archives where id=1'}[field:litpic/]{/dede:sql}) no-repeat;"></a> 
+    <ul class="nav-bar-list"> 
+     
+	 {dede:channelArtlist typeid='41,47,52,56,58,62,66,74'}
+<li class="nav-bar-item nav-bar-office"> <a href="javascript:void(0);" class="nav01">{dede:field.typename/}</a> 
+      <div class="item item-office"> 
+       <ul class="office"> 
+        
+		{dede:channel type='son' typeid='' noself='true'}
+<li class="office-list"><a href="[field:typelink /]"> <i class="fa fa-angle-double-right"></i>[field:typename/]</a> 
+         <div class="office-detail  hide">
+          <h1><a href="/Index/read/id/56.html">[field:typename/]</a></h1> 
+          <p><font face="Arial, Tahoma, Helvetica Neue, Luxi Sans, DejaVu Sans, Hiragino Sans GB, STHeiti, Microsoft YaHei, Arial, sans-serif"> [field:description /]</font><br /></p>
+         </div> </li>
+{/dede:channel}
+         
+        <div class="nav-item-img">
+         <img src="{dede:field.arcpic/}" alt="" />
+        </div> 
+       </ul> 
+      </div> </li>
+{/dede:channelArtlist}
+	  
+    </ul> 
+   </nav> 
+  </header> 

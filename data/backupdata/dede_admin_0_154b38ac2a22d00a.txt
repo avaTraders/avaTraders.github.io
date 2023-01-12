@@ -1,0 +1,1 @@
+INSERT INTO `dede_admin` VALUES('3','10','guanliyuan888','dcd990697fb53f0bca23','guanliyuan888','','','','1659146106','116.213.41.83');
